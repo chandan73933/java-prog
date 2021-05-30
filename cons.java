@@ -1,21 +1,21 @@
-class stu
+class A
 {
-	int a,b;
-	stu(int x,int y)
+	A()
 	{
-	a=x;
-	b=y;	
+		System.out.println("cons with no arg");
 	}
-	void disp()
+	A(int x,int y)
 	{
-		System.out.println("the value is a"+a);
-		System.out.println("the value is b"+b);
+		System.out.println("value are "+ x);
+		
+		System.out.println("value are "+ y);
 	}
 }
 class cons
 {
-	 public static void main(String[] args) {
-		stu obj=new stu(3,5);
-		obj.disp();
+	public static void main(String[] args) {
+		A obj=new A();
+		A obj2=new A(3,6);
+		
 	}
 }
